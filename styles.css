@@ -1,0 +1,59 @@
+body {
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 40%
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #edede8;
+    color: #595959;
+    border-bottom: 8px solid #cccccc;
+    box-shadow: 10px 5px 5px #a5a5a5;
+    
+ 
+  
+}
+.data{
+    font-size: 16px;   
+    animation-name: data-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding: 20px;
+    background-clip: padding-box;
+    
+}
+
+.card:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+@keyframes data-animation {
+    0% {
+    transform: scale(1);
+    background-color: #edede8;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #f4f3ee;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #cccccc;
+}
